@@ -5,6 +5,8 @@ Requires:
 docker
 docker-compose
 bash
+make
+
 
 Downloading the repository:
 
