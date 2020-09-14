@@ -6,6 +6,7 @@ Scratchpad for postgres.
 For example all the secrets are in the form of environment variables which are in the vcs in the .env file.
 
 ## Repo structure
+
 ```
 .
 ├── .env                            # contains the environment variables
@@ -29,7 +30,13 @@ For example all the secrets are in the form of environment variables which are i
 
 
 ## Requirements:
-docker, docker-compose, bash, make
+
+You need the following installed:
+
+* docker
+* docker-compose
+* bash
+* make
 
 
 # Installation
