@@ -9,6 +9,8 @@ services:
       - ./pgdata:/var/lib/postgresql/data
     ports:
       - "5432"
+    networks:
+      - postgresql
 
   dev:
     build:
@@ -22,8 +24,21 @@ services:
       - ".:/app"
     depends_on:
       - db
-  # pgadmin4:
-  #   image: dpage/pgadmin4
-  #   restart: always
-  #   env_file:
-  #     - .env
+    networks:
+      - postgresql
+
+  db-admin:
+    image: "dpage/pgadmin4:latest"
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    networks:
+      - postgresql
+
+networks:
+  postgresql:
+    driver: bridge
