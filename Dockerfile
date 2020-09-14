@@ -15,7 +15,7 @@ RUN apt-get update && apt-get upgrade -y \
     && mkdir -pv /app/dev
 
 COPY . /app/dev
-COPY docker-entrypoint.sh /usr/local/bin/
+COPY scripts/docker-entrypoint.sh /usr/local/bin/
 WORKDIR /app/dev
 
 EXPOSE 5432

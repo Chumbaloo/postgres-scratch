@@ -2,10 +2,10 @@ build:
 	docker-compose build
 
 debug:
-	docker-compose up dev
+	docker-compose run dev
 
 admin:
-	docker-compose up -d dev db-admin
+	docker-compose up -d db-admin
 
 down:
 	docker-compose down
