@@ -23,7 +23,7 @@ For example all the secrets are in the form of environment variables which are i
 │   └── start.sh                    # start postgres
 └── sql                             # folder containing all the sql we cover in the tutes
     ├── data.sql                
-    ├── heheh.sql
+    ├── clean.sql
     └── schema.sql
 
 ```

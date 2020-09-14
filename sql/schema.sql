@@ -1,8 +1,7 @@
 CREATE TABLE IF NOT EXISTS Department (
-    id serial,    
+    id serial PRIMARY KEY,    
     name text UNIQUE NOT NULL,
-    slogan text,
-    PRIMARY KEY (id, name)
+    slogan text
 );
 
 CREATE TABLE IF NOT EXISTS Employee (
