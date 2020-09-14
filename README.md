@@ -19,7 +19,7 @@ git clone git@github.com:Chumbaloo/postgres-scratch.git
 git clone https://github.com/Chumbaloo/postgres-scratch.git
 ```
 
-Building:
+Building (Should only be done once):
 
 ```bash
 # build
