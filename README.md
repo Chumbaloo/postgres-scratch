@@ -17,7 +17,7 @@ make build
 make debug
 
 # start postgres
-./start.sh
+root@<containerID>:/app# ./start.sh
 
 postgres=\#  
 
