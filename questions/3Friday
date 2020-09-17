@@ -1,0 +1,13 @@
+Exercises for week3 and solutions.
+
+Circular References when starting a database: https://edstem.org/courses/4460/discussion/294731
+Higher Degree Relationship Mapping to Binary Relationship: https://edstem.org/courses/4460/discussion/295073
+
+
+If there is any time left:
+Alter table examples.
+Join examples.
+Update Table without checking if it exists. 
+Inserting multiple values single insert statement.
+Having unique non-null in table -> then alter table -> then add values -> then alter table again. 
+

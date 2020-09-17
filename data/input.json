@@ -1,0 +1,72 @@
+[{
+		"Relation": {
+			"Brewers": {
+				"id": ["series", "Brewers"],
+				"name": ["unique"],
+				"country": ["country"]
+			}
+		},
+		"valuesToGenerate": 10
+	},
+	{
+		"Relation": {
+			"Beers": {
+				"id": ["series", "Beers"],
+				"name": ["unique"],
+				"brewer": ["integer", 1, 10]
+			}
+		},
+		"valuesToGenerate": 50
+	},
+	{
+		"Relation": {
+			"Bars": {
+				"id": ["series", "Bars"],
+				"name": ["choice", ["Trading name", "Clyde Hotel", "Percys Bar & Bistro", "Clare Castle Hotel", "Dan OConnell Hotel", "Players On Lygon", "Bar Centrale", "Lincoln Hotel", "Canada Hotel", "John Curtin Hotel", "Lagers On Lygon", "Locker Room Club Bar", "Holiday Inn Melbourne", "Hilton Hotels of Australia (Melbourne) Pty Ltd", "MCG Worx", "Spotless Services", "Melbourne International Backpackers", "The Oxford Scholar Hotel", "Waterside Hotel", "Holiday Inn On Flinders Melbourne", "Explorers Inn", "Mercat Cross Hotel", "Stork Hotel", "Macs Hotel", "The Bliss Lounge", "Bond Lounge", "Hosies Tavern", "Connells Tavern", "Bull And Bear Tavern", "De Biers", "Young & Jackson", "Adelphi Hotel", "Purple Emerald", "Velour", "The Sherlock Holmes Inn", "Menzies Tavern", "The Irish Times", "The Kitchen Restaurant", "Grosvenor Tavern", "The Charles Dickens Tavern", "Australia On Collins Bar", "Hi Fi Bar & Ballroom", "Dr Martins Tavern", "The Exchange Hotel", "The Turf Bar & Restaurant", "The Carlton Hotel", "Gin Palace", "Portland Hotel", "Spleen Central"]],
+				"addr": ["address"],
+				"license": ["integer", 111111, 999999]
+			}
+		},
+		"valuesToGenerate": 15
+	},
+	{
+		"Relation": {
+			"Drinkers": {
+				"id": ["series", "Drinkers"],
+				"name": ["name"],
+				"addr": ["address"],
+				"phone": ["phone"]
+			}
+		},
+		"valuesToGenerate": 100
+	},
+	{
+		"Relation": {
+			"Sells": {
+				"bar": ["integer", 1, 15],
+				"beer": ["integer", 1, 50],
+				"price": ["numeric", 5, 30]
+			}
+		},
+		"valuesToGenerate": 100
+	},
+	{
+		"Relation": {
+			"Likes": {
+				"drinker": ["integer", 1, 100],
+				"beer": ["integer", 1, 50]
+			}
+		},
+		"valuesToGenerate": 100
+	},
+	{
+		"Relation": {
+			"Frequents": {
+				"drinker": ["integer", 1, 100],
+				"bar": ["integer", 1, 15]
+			}
+		},
+		"valuesToGenerate": 100
+	}
+
+]
