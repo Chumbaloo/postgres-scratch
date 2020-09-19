@@ -1,0 +1,10 @@
+Exercises:
+
+Q1: What beers are made by Carlton?
+Q2: What beers are made by  Toohey's ?
+Q3: How many different beers are there?
+Q4: How many beers does each brewer make? (Display your results in descending order on number of beers sold by each brewer)
+
+Weblog
+Q1: how many page accesses on March 2 between 09am to 10am (inclusive)? 
+Q2: List hostnames,  not ending in "au", calculate total number of bytes accessed by each hostname (call it sumbytes), order hostnames in the descending order of 'sumbytes' accessed, limit results to top 10 tuples. 
